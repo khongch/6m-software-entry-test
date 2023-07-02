@@ -13,14 +13,30 @@
 // Task 1: Add code here
 
 function addPatient(patientName){
+    patients.push(patientName);
+    
     // Task 2: Add code here
+    addPatient('Tan Ah Kow');
+    addPatient('Soh Kim Yew');
+
 }
 
 // Task 3: Add code here
+let patients = [];
 
+function addPatient(patientName) {
+    patients.push(patientName);
+}
 
-addPatient("John");
-addPatient("Mary");
-addPatient("Mark");
+function listPatients() {
+    for(let i = 0; i < patients.length; i++) {
+        console.log(patients[i]);
+    }
+}
 
-listPatient(); // This should list ["John", "Mary", "Mark"]
+// Now we can patient names and list them using addPatient and listPatients functions respectively:
+addPatient('Tan Ah Kow');
+addPatient('Soh Kim Yew');
+
+listPatients();
+
