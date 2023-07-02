@@ -10,6 +10,10 @@ const dog = {
     petName:"Bobby"
 }
 
-// Task 1: Add code here
+// Task 1: 
+let dog = {};
+dog.breed = "Poodle";
 
-// Task 2: Add code here
+// Task 2:
+for(let key in dog) {
+    console.log(key + ": " + dog[key]);
